@@ -982,6 +982,36 @@
     supports-color "8.1.1"
     url "0.11.0"
 
+"@blitzjs/generator@2.0.0-beta.2":
+  version "2.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@blitzjs/generator/-/generator-2.0.0-beta.2.tgz#3379704a536f129cb2053cc4a4cdc80e04184b03"
+  integrity sha512-AeyoYR2VT/CqiykHk5LbnbS2fYg5Ll/DjB8JP4Ij42m0o8qnuA/qFRxcUjgz/VnQX7EGUX92agAt2JFBiYgN6A==
+  dependencies:
+    "@babel/core" "7.12.10"
+    "@babel/plugin-transform-typescript" "7.12.1"
+    "@babel/preset-env" "7.12.10"
+    "@babel/types" "7.12.10"
+    "@mrleebo/prisma-ast" "0.2.6"
+    chalk "^4.1.0"
+    console-table-printer "2.10.0"
+    cross-spawn "7.0.3"
+    diff "5.0.0"
+    enquirer "2.3.6"
+    fs-extra "10.0.1"
+    got "^11.8.1"
+    jscodeshift "0.13.0"
+    mem-fs "1.2.0"
+    mem-fs-editor "8.0.0"
+    npm-which "3.0.1"
+    ora "5.3.0"
+    pluralize "8.0.0"
+    prettier "^2.5.1"
+    recast "0.20.5"
+    supports-color "8.1.1"
+    tslog "3.3.1"
+    username "5.1.0"
+    vinyl "2.2.1"
+
 "@blitzjs/generator@2.0.0-beta.3":
   version "2.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@blitzjs/generator/-/generator-2.0.0-beta.3.tgz#86a39c9d8103a5e8cfcc0203b43f103cec13994a"
