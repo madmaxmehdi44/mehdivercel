@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Vazir;
+  src: url("fonts/vazir/Vazir-Regular.eot");
+  src: url("fonts/vazir/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/vazir/Vazir-Regular.woff2") format("woff2"),
+    url("fonts/vazir/Vazir-Regular.woff") format("woff"),
+    url("fonts/vazir/Vazir-Regular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Vazir-Bold;
+  src: url("fonts/vazir/Vazir-Bold.eot");
+  src: url("fonts/vazir/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/vazir/Vazir-Bold.woff2") format("woff2"),
+    url("fonts/vazir/Vazir-Bold.woff") format("woff"),
+    url("fonts/vazir/Vazir-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+/*
+ * FIXED for Font-Face Chrome Rendering
+================================================================================ */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: Vazir-Bold;
+    src: url("fonts/vazir/Vazir-Bold.eot");
+    src: url("fonts/vazir/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
+      url("fonts/vazir/Vazir-Bold.woff2") format("woff2"),
+      url("fonts/vazir/Vazir-Bold.woff") format("woff"),
+      url("fonts/vazir/Vazir-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: bold;
+  }
+}

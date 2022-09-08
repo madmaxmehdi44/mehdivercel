@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: Vazir;
+  src: url("fonts/vazir/Vazir-Regular.eot");
+  src: url("fonts/vazir/Vazir-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/vazir/Vazir-Regular.woff2") format("woff2"),
+    url("fonts/vazir/Vazir-Regular.woff") format("woff"),
+    url("fonts/vazir/Vazir-Regular.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@tailwind utilities;
+
+@layer components {
+  .hero {
+    @apply w-full text-[#333];
+  }
+}
+
+.title {
+  @apply w-full pt-20 m-0;
+  font-size: 48px;
+}
+
+.title,
+.description {
+  @apply text-center;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.video-docker video {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-docker::after {
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  /* background: rgba(47, 10, 180, 0.6); */
+}
+
+/* .modalaaaa {
+  position: fixed;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: red;
+  border: black 1px solid;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.promptDialog {
+  flex-direction: column;
+  align-content: space-between;
+  height: 70px;
+  width: 175px;
+}
+
+.promptDialog .message {
+  flex: 1;
+}
+
+.promptDialog .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.promptDialog .buttons button {
+  margin: 0 5px;
+  min-width: 50px;
+}
+
+.imageModal {
+  max-height: 500px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.imageModal .close {
+  position: absolute;
+  cursor: pointer;
+  padding: 5px;
+  color: white;
+}
+
+.imageModal .image {
+  height: 100%;
+  width: 100%;
+} */
