@@ -56,10 +56,16 @@ const UserInfo = () => {
 const Home: BlitzPage = () => {
   return (
     <Layout title="Home">
-      <div className="container">
-        <main>
-          <div className="logo">
-            <Image src={`${logo.src}`} alt="blitzjs" width="256px" height="118px" layout="fixed" />
+      <div className="flex flex-col mx-auto">
+        <div>
+          <div className="">
+            <Image
+              src={`${logo.src}`}
+              alt="blitzjs"
+              width="100px"
+              height="118px"
+              layout="responsive"
+            />
           </div>
           <p>
             <strong>Congrats!</strong> Your app is ready, including user sign-up and log-in.
@@ -96,41 +102,37 @@ const Home: BlitzPage = () => {
               </Link>
             </p>
           </div>
-          <div className="buttons" style={{ marginTop: "5rem" }}>
+          <div className="btn-group flex" style={{ marginTop: "5rem" }}>
             <a
-              className="button"
-              href="https://blitzjs.com/docs/getting-started?utm_source=blitz-new&utm_medium=app-template&utm_campaign=blitz-new"
+              className="btn btn-ghost"
+              href="https://arput.com/docs/getting-started"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Documentation
+              نمونه کارها
             </a>
             <a
-              className="button-outline"
-              href="https://github.com/blitz-js/blitz"
+              className="button-outline btn"
+              href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github Repo
+              خدمات
             </a>
             <a
-              className="button-outline"
-              href="https://discord.blitzjs.com"
+              className="button-outline btn"
+              href="https://discord.arput.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Discord Community
+              راه های ارتباطی
             </a>
           </div>
-        </main>
+        </div>
 
         <footer>
-          <a
-            href="https://blitzjs.com?utm_source=blitz-new&utm_medium=app-template&utm_campaign=blitz-new"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by Blitz.js
+          <a href="https://Arput.com" target="_blank" rel="noopener noreferrer">
+            Powered by Arput.com
           </a>
         </footer>
 
