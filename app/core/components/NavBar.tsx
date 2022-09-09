@@ -7,6 +7,7 @@ import logout from "app/auth/mutations/logout"
 // import { SkewLoader, ScaleLoader } from "react-spinners"
 import { useEffect } from "react"
 import { Routes } from "@blitzjs/next"
+import { useMutation } from "@blitzjs/rpc"
 // import { themeChange } from "theme-change"
 // import { SunIcon, MoonIcon, MenuIcon, LockClosedIcon, XCircleIcon } from "@heroicons/react/solid"
 // import ModalIndex from "./ModalCompnent"
@@ -65,17 +66,7 @@ export function ToggleTheme() {
       <input type="checkbox" />
 
       {/* <!-- sun icon --> */}
-      <SunIcon
-        className="swap-on fill-current w-12 h-12 text-yellow-200 rounded-full glass"
-        data-toggle-theme="light,dark"
-        data-act-class="ACTIVECLASS"
-      />
-      {/* <!-- moon icon --> */}
-      <MoonIcon
-        className="swap-off fill-current w-12 h-12  text-stone-200 rounded-full glass"
-        data-toggle-theme="dark,light"
-        data-act-class="ACTIVECLASS"
-      />
+
       {/* <!-- moon icon --> */}
     </label>
   )
@@ -213,7 +204,7 @@ export const NavBar = () => {
 export const NavBar2 = () => {
   // const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
-    themeChange(false)
+    // themeChange(false)
     // 👆 false parameter is required for react project
   }, [])
 
@@ -233,7 +224,7 @@ export const NavBar2 = () => {
             tabIndex={0}
             className="p-1 mt-3 shadow menu menu-title min-w-max dropdown-content bg-base-100 rounded-box "
           >
-            <LinkMenusMobileList />
+            {/* <LinkMenusMobileList /> */}
           </ul>
           {/* </label> */}
         </div>
@@ -242,9 +233,9 @@ export const NavBar2 = () => {
         <div className="navbar-start">
           <div className="flex flex-row space-x-2">
             <label tabIndex={0} className="mx-1">
-              <Suspense fallback={<ScaleLoader />}>
+              {/* <Suspense fallback={<ScaleLoader />}>
                 <ToggleTheme />
-              </Suspense>
+              </Suspense> */}
             </label>
             {/* 
             <label tabIndex={0} className="dropdown dropdown-content">
@@ -274,9 +265,9 @@ export const NavBar2 = () => {
 
         <div className="navbar-center">
           <div className="hidden md:flex">
-            <Suspense fallback={<SkewLoader />}>
+            {/* <Suspense fallback={<SkewLoader />}>
               <LinkMenusList />
-            </Suspense>
+            </Suspense> */}
           </div>
         </div>
         <div className="navbar-end">
