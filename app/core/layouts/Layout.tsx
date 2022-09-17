@@ -20,7 +20,7 @@ const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({
         <main className="mb-auto no-scrollbar overflow-scroll font-display">{children}</main>
         <footer className="flex flex-col">
           <a href="https://Arput.com" target="_blank" rel="noopener noreferrer">
-            Powered by Arput.com
+            Powered by MadmAx.com
           </a>
         </footer>
       </div>
